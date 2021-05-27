@@ -1,0 +1,55 @@
+#Page up/page down
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[3~": delete-char
+"\e[2~": quoted-insert
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+#"5~": history-search-backward
+#"6~": history-search-forward
+"\e[5~": beginning-of-history
+"\e[6~": end-of-history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Completion Options
+set page-completions on
+set show-all-if-unmodified on
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set completion-query-items 200
+set bell-style visible
+set expand-tilde on
+set visible-stats on
+set meta-flag on
+set input-meta on
+set convert-meta off
+set output-meta on
+
+# Adds punctuation as word delimiters
+set bind-tty-special-chars off
+
+# Woo!
+set editing-mode vi
+
+$if mode=vi
+    set keymap vi-command
+    "gg": beginning-of-history
+    "G": end-of-history
+
+    set keymap vi-insert
+    "\C-a": beginning-of-line
+    "\C-e": end-of-line
+    "\C-l": clear-screen
+    "\C-w": backward-kill-word
+    # auto-complete from the history
+    "\C-p": history-search-backward
+    "\C-n": history-search-forward
+$endif
+
+# IPython needs this to appear at the bottom of the
+# file for clear-screen to work
+# set keymap vi-command
