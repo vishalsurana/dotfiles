@@ -89,6 +89,9 @@ alias tree='tree -a -I .git'
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
 alias vscode="GIT_COMMITTER_EMAIL=\"vishal@moengage.com\" GIT_COMMITTER_NAME=\"Vishal Surana\" code --remove-signature /Applications/Visual\ Studio\ Code.app/Contents/Frameworks/Code\ Helper\ \(Renderer\).app"
+alias jps  ='jps -lvm'
+alias jpsk9='jps | fzf --reverse -m -e -i | cut -d " " -f1 | xargs kill -9 2>/dev/null'
+alias jpsk ='jps | fzf --reverse -m -e -i | cut -d " " -f1 | xargs kill    2>/dev/null'
 
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
