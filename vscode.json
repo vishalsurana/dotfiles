@@ -1,0 +1,386 @@
+{
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "atlascode.bitbucket.contextMenus.enabled": false,
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.bitbucket.explorer.enabled": false,
+    "atlascode.bitbucket.issues.explorerEnabled": true,
+    "atlascode.bitbucket.pipelines.explorerEnabled": false,
+    "atlascode.bitbucket.statusbar.enabled": false,
+    "atlascode.jira.explorer.fetchAllQueryResults": true,
+    "atlascode.jira.jqlList": [
+        {
+            "enabled": true,
+            "filterId": "10502",
+            "id": "82bddd68-5b48-4a2b-83e4-1112be613579",
+            "monitor": true,
+            "name": "Reported by Me & Unresolved Across All Projects",
+            "query": "resolution = Unresolved AND reporter in (currentUser()) ORDER BY created DESC, priority DESC",
+            "siteId": "85e7534e-7a93-40f4-a71e-5204ece7ec46"
+        },
+        {
+            "enabled": true,
+            "id": "54f1d841-860a-44dd-8cc5-ff9ecff14b34",
+            "monitor": true,
+            "name": "My moengagetrial Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "85e7534e-7a93-40f4-a71e-5204ece7ec46"
+        },
+        {
+            "enabled": true,
+            "filterId": "10503",
+            "id": "396e1444-d2ff-4e46-be3b-3ba452e3643c",
+            "monitor": true,
+            "name": "Data Team - Unresolved Support Tickets",
+            "query": "project = SUP AND status in (DevComplete, IN-PROGRESS, InQA, \"QA Completed\", Reopened, TODO) AND resolution = Unresolved AND assignee in (5add914deee87f2e31512bb5, 5e12fdd2cbf1830daa9ce632, 5cd2afdbd210950fd02d08f1, 5c988c3e2116a07570791714, 5ae1705f87ac7129b88e95dd, 5fa52d52b38e610071525f58, 5fe1daa4dd5eb50108429d92) ORDER BY created DESC, cf[10049] ASC, component DESC, priority DESC",
+            "siteId": "85e7534e-7a93-40f4-a71e-5204ece7ec46"
+        },
+        {
+            "enabled": true,
+            "filterId": "11085",
+            "id": "399f2d91-9562-4ce5-bc58-fb866c33a05c",
+            "monitor": true,
+            "name": "Action Streaming Bugs",
+            "query": "project = DT AND status not in (\"Not a Bug\", Released, Closed, \"QA Completed\", \"Tech Limitation(Cannot fix)\") AND labels = SDP AND component = sdp-qa ORDER BY status DESC, created DESC",
+            "siteId": "85e7534e-7a93-40f4-a71e-5204ece7ec46"
+        }
+    ],
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "projectKey": "SRE",
+        "siteId": "85e7534e-7a93-40f4-a71e-5204ece7ec46"
+    },
+    "atlascode.jira.statusbar.showProduct": false,
+    "atlascode.jira.statusbar.showUser": false,
+    "aws.profile": "profile:staging",
+    "aws.suppressPrompts": {
+        "regionAddAutomatically": true
+    },
+    "aws.telemetry": false,
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "backgroundColor": "transparent",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "tag": "!"
+        },
+        {
+            "backgroundColor": "transparent",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "tag": "?"
+        },
+        {
+            "backgroundColor": "transparent",
+            "color": "#474747",
+            "strikethrough": true,
+            "tag": "//"
+        },
+        {
+            "backgroundColor": "transparent",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "tag": "todo"
+        },
+        {
+            "backgroundColor": "transparent",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "tag": "fixme"
+        },
+        {
+            "backgroundColor": "transparent",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "tag": "xxx"
+        },
+        {
+            "backgroundColor": "transparent",
+            "color": "#98C379",
+            "strikethrough": false,
+            "tag": "*"
+        }
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-user": {
+            "addWords": true,
+            "name": "custom-dictionary-user",
+            "path": "~/.cspell/custom-dictionary-user.txt"
+        }
+    },
+    "cSpell.dictionaries": [],
+    "cSpell.enabled": true,
+    "cSpell.language": "en-GB",
+    "cSpell.userWords": [],
+    "code-runner.enableAppInsights": false,
+    "conventionalCommits.showNewVersionNotes": false,
+    "debug.inlineValues": "on",
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.showBreakpointsInOverviewRuler": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.codeLens": true,
+    "docker.containers.sortBy": "CreatedTime",
+    "docker.host": "ssh://ubuntu@remote-docker-dev",
+    "dotfiles.installCommand": "~/dotfiles/install.sh",
+    "dotfiles.repository": "vishalsurana/dotfiles",
+    "dotfiles.targetPath": "~/dotfiles",
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "'Cascadia Code'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13.5,
+    "editor.fontWeight": "350",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "none",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true
+    },
+    "editor.stickyScroll.enabled": true,
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "errorLens.statusBarColorsEnabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": false,
+    "files.associations": {
+        "*.env": "dotenv"
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/.ammonite": true,
+        "**/.bloop": true,
+        "**/.metals": true
+    },
+    "foam.openDailyNote.directory": "/tmp",
+    "foam.openDailyNote.onStartup": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.pullBeforeCheckout": true,
+    "gitProjectManager.baseProjectsFolders": [
+        "~/moengage"
+    ],
+    "githubPullRequests.assignCreated": "${user}",
+    "githubPullRequests.fileListLayout": "tree",
+    "githubPullRequests.pullBranch": "never",
+    "gitlens.advanced.messages": {
+        "suppressFileNotUnderSourceControlWarning": true
+    },
+    "gitlens.views.branches.branches.layout": "list",
+    "gitlens.views.stashes.files.layout": "list",
+    "java.format.enabled": false,
+    "java.import.generatesMetadataFilesAtProjectRoot": true,
+    "java.import.gradle.version": "7.3",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/vishal/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "jupyter.askForKernelRestart": false,
+    "leetcode.defaultLanguage": "scala",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.workspaceFolder": "/Users/vishal/experiments/scala/leetcode",
+    "liveshare.anonymousGuestApproval": "accept",
+    "markdown.preview.fontFamily": "'Noto Sans Mono SemiCondensed'",
+    "markdown.suggest.paths.enabled": true,
+    "markdownlint.focusMode": true,
+    "markdownlint.run": "onSave",
+    "mdb.sendTelemetry": false,
+    "metals.scalafmtConfigPath": "./.scalafmt.conf",
+    "metals.showImplicitArguments": true,
+    "metals.showImplicitConversionsAndClasses": true,
+    "metals.showInferredType": false,
+    "metals.testUserInterface": "Code Lenses",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "okteto.telemetry": false,
+    "php.validate.executablePath": "",
+    "python.defaultInterpreterPath": "/Users/vishal/.virtualenvs/datascience/bin/python",
+    "python.diagnostics.sourceMapsEnabled": true,
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "quarkus.tools.alwaysShowWelcomePage": false,
+    "qute.validation.enabled": true,
+    "redhat.telemetry.enabled": false,
+    "remote.SSH.configFile": "~/.ssh/config",
+    "remote.SSH.connectTimeout": 60,
+    "remote.SSH.remotePlatform": {
+        "data-ops-dev": "linux",
+        "flink-load-test": "linux",
+        "job-manager-arm": "linux",
+        "job-manager-ha": "linux",
+        "job-manager-us-east-1": "linux",
+        "mongo-load-test": "linux",
+        "reaction-streaming-manager": "linux",
+        "reaction-streaming-staging": "linux",
+        "task-manager-ha": "linux"
+    },
+    "remote.SSH.useLocalServer": false,
+    "remote.downloadExtensionsLocally": true,
+    "remote.extensionKind": {
+        "caarlos0.language-prometheus": [
+            "workspace"
+        ],
+        "ibm.output-colorizer": [
+            "workspace"
+        ]
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredExtensions": [
+        "vscode.theme-kimbie-dark",
+        "vscode.theme-abyss",
+        "vscode.theme-monokai",
+        "vscode.theme-red",
+        "vscode.theme-solarized-dark",
+        "vscode.theme-solarized-light",
+        "vscode.theme-tomorrow-night-blue",
+        "beardedbear.beardedtheme",
+        "ms-vscode-remote.remote-wsl"
+    ],
+    "sonarlint.disableTelemetry": true,
+    "sundial.sunset": "18:00",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.defaultProfile.osx": "zsh (2)",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono'",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontWeight": "350",
+    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash",
+            "path": "bash"
+        },
+        "tmux": {
+            "icon": "terminal-tmux",
+            "path": "tmux"
+        },
+        "zsh": {
+            "args": [
+                "-l"
+            ],
+            "path": "zsh"
+        },
+        "zsh (2)": {
+            "path": "/usr/local/bin/zsh"
+        }
+    },
+    "terminal.integrated.shellIntegration.enabled": false,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.enabled": false,
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.tree.disableCompactFolders": false,
+    "todo-tree.tree.showBadges": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.showCurrentScanMode": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "vim.autoindent": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.easymotion": true,
+    "vim.enableNeovim": true,
+    "vim.foldfix": true,
+    "vim.gdefault": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "j"
+            ]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.neovimPath": "/opt/homebrew/bin/nvim",
+    "vim.statusBarColors.commandlineinprogress": "",
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.linux": "/home/vscode/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.helm-path.mac": "/Users/vishal/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.kubectl-path.linux": "/root/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.kubectl-path.mac": "/Users/vishal/.vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path.linux": "/home/vscode/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vscode-kubernetes.minikube-path.mac": "/Users/vishal/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.confirmBeforeClose": "never",
+    "window.nativeTabs": true,
+    "workbench.colorTheme": "Noctis Lux",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "git-rebase-todo": "gitlens.rebase"
+    },
+    "workbench.enableExperiments": true,
+    "workbench.preferredDarkColorTheme": "Eva Dark",
+    "workbench.preferredLightColorTheme": "Noctis Lux",
+    "workbench.startupEditor": "readme",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.schemas": {
+        "file:///Users/vishal/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    }
+}
